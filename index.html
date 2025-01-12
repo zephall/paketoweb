@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paketo - Tienda de Tecnología</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-carousel@0.5.1/dist/vanilla-carousel.min.js"></script>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/PaketoIcon.png" alt="">
+                <h1>Paketo</h1>
+            </div>
+
+            <div class="search-container">
+                <input type="text" placeholder="Buscar productos..." class="search-input">
+                <button class="search-button">Buscar</button>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/categorias">Productos</a></li>
+                <li><a href="/offers">Ofertas</a></li>
+                <li><a href="/info.html">Informacion</a></li>
+                <li><a href="/me/carrito-de-compra.html">Carrito</a></li>
+            </ul>
+            <!-- Barra de búsqueda -->
+        </nav>
+    </header>
+
+    <!-- Sección de productos destacados -->
+    <section class="productos">
+        <h2>Productos Destacados</h2>
+        <div class="productos-lista">
+            <div class="producto">
+                <img src="https://images.gamers-outlet.net/image/cache/wp/gj/Covers/wintest-500x500.webp" alt="Windows 10">
+                <h3>Windows 10</h3>
+                <p><span class="precio">$599.99 MXN</span></p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_735845-MLM80572703860_112024-F.webp" alt="Office 365">
+                <h3>Office 365</h3>
+                <p><span class="precio">$1,199.99 MXN</span></p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_737517-MLM53835412328_022023-F.webp" alt="Cable HDMI">
+                <h3>Cable HDMI</h3>
+                <p><span class="precio">$199.99 MXN</span></p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://ss628.liverpool.com.mx/xl/1115452432.jpg" alt="Monitor 24">
+                <h3>Monitor 24"</h3>
+                <p><span class="precio">$3,499.99 MXN</span></p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://i5.walmartimages.com.mx/mg/gm/1p/images/product-images/img_large/00075976321499l.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="Macbook Pro">
+                <h3>Laptop Gamer Lenovo</h3>
+                <p><span class="precio">$29,999.99 MXN</span></p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOrvVnQvkEECpUiKTQInPcmvjQrDyqwqdXoTuBwaUnkd62jWSd3ei0NLulboOtmAYzIDT2xwvlYJ8au3Sw2o5pLGOh0DLONE1YpYw_0b-_MOvussHZp0oW&usqp=CAE" alt="Mouse Inalámbrico">
+                <h3>Mouse Inalámbrico</h3>
+                <p><span class="precio">$350.00 MXN</span></p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_980237-MLM78768593357_082024-O.webp" alt="Teclado Mecánico">
+                <h3>Teclado Mecánico</h3>
+                <p><span class="precio">$1,299.99 MXN</span></p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de ofertas especiales -->
+    <section class="ofertas">
+        <h2>Ofertas Especiales</h2>
+        <div class="oferta">
+            <img src="https://laluzdelalunasas.com/wp-content/uploads/2024/07/1000026622.jpg.webp" alt="Windows 10 Pro">
+            <h3>Windows 10 Pro - 50% de descuento</h3>
+            <p><span class="precio">$299.99 MXN</span></p>
+            <button>Añadir al carrito</button>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Paketo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Configuración de VanillaCarousel para el carousel dinámico
+        const carousel = new VanillaCarousel('#carousel', {
+            itemsToShow: 3,          // Mostrar 3 elementos por vez
+            autoplay: true,          // Desplazamiento automático
+            interval: 3000,          // Intervalo de 3 segundos entre deslizamientos
+            loop: true,              // Loop infinito
+            animation: 'scroll',     // Animación de desplazamiento
+            navigation: true,        // Añadir botones de navegación (prev y next)
+        });
+    </script>
+</body>
+</html>
+

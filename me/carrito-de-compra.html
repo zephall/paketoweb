@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paketo - Carrito de Compras</title>
+    <link rel="stylesheet" href="styles/general.css ">
+    <link rel="stylesheet" href="styles/carrito.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Paketo</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <!-- Barra de búsqueda -->
+            <div class="search-container">
+                <input type="text" placeholder="Buscar productos..." class="search-input">
+                <button class="search-button">Buscar</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carrito de compras -->
+    <section class="carrito">
+        <div class="carrito-header">
+            <h2>Tu Carrito de Compras</h2>
+        </div>
+        <div class="carrito-contenido">
+            <!-- Producto 1 -->
+            <div class="producto-carrito">
+                <img src="https://ss628.liverpool.com.mx/xl/1115452432.jpg" alt="Monitor 24">
+                <div class="producto-info">
+                    <h3>Monitor 24"</h3>
+                    <p>Disfruta de una experiencia visual nítida y fluida con este monitor de 24 pulgadas, ideal para el trabajo y el entretenimiento.</p>
+                    <p><strong>Precio: </strong><span class="precio">$3,499.99 MXN</span></p>
+                    <div class="cantidad">
+                        <label for="cantidad1">Cantidad:</label>
+                        <input type="number" id="cantidad1" value="1" min="1">
+                    </div>
+                    <button class="remover-producto">Eliminar</button>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto-carrito">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_735845-MLM80572703860_112024-F.webp" alt="Office 365">
+                <div class="producto-info">
+                    <h3>Office 365</h3>
+                    <p>La suite ofimática más completa para tu productividad diaria. Incluye Word, Excel, PowerPoint y más.</p>
+                    <p><strong>Precio: </strong><span class="precio">$1,199.99 MXN</span></p>
+                    <div class="cantidad">
+                        <label for="cantidad2">Cantidad:</label>
+                        <input type="number" id="cantidad2" value="1" min="1">
+                    </div>
+                    <button class="remover-producto">Eliminar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resumen de compra -->
+        <div class="resumen-compra">
+            <h3>Resumen</h3>
+            <p><strong>Total Productos:</strong> 2</p>
+            <p><strong>Total:</strong> <span class="total-precio">$4,699.98 MXN</span></p>
+            <button class="boton-compra">Proceder al Pago</button>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Paketo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

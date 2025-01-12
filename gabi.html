@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cálculo de perímetro</title>
+</head>
+
+<body>
+    <h1>Cálculo de perímetro</h1>
+    <form>
+        <label>Elige una figura:</label>
+        <select id="figura" onchange="mostrarCamposRectangulo()">
+            <option value="triangulo">Triángulo</option>
+            <option value="cuadrado">Cuadrado</option>
+            <option value="rectangulo">Rectángulo</option>
+            <option value="pentagono">Pentágono</option>
+            <option value="hexagono">Hexágono</option>
+        </select>
+        <br>
+
+        <label>Ingrese el valor del lado:</label>
+        <input type="number" id="lado" placeholder="Lado principal">
+        <br>
+        <div id="camposRectangulo" style="display: none;">
+            <label>Ingrese el valor del otro lado:</label>
+            <input type="number" id="lado2" placeholder="Lado secundario">
+            <br>
+        </div>
+
+        <button type="button" onclick="calcularPerimetro()">Calcular perímetro</button>
+        <p id="resultado"></p>
+    </form>
+
+    <center>
+        <footer>
+            Me debes 10 pesos :)
+        </footer>
+    </center>
+
+    <style>
+        footer {
+            background-color: rgb(246, 127, 242);
+            margin: 0px;
+            padding: 0px;
+            font-size: larger;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            display: grid;
+        }
+    </style>
+
+</body>
+
+</html>
+
+<script>
+    function mostrarCamposRectangulo() {
+        var figura = document.getElementById("figura").value;
+        var camposRectangulo = document.getElementById("camposRectangulo");
+
+        if (figura === "rectangulo") {
+            camposRectangulo.style.display = "block";
+        } else {
+            camposRectangulo.style.display = "none";
+        }
+    }
+
+    function calcularPerimetro() {
+        var figura = document.getElementById("figura").value;
+        var lado = parseFloat(document.getElementById("lado").value);
+        var perimetro;
+
+        if (isNaN(lado)) {
+            document.getElementById("resultado").innerText = "Por favor, ingrese un valor válido para el lado.";
+            return;
+        }
+
+        switch (figura) {
+            case "triangulo":
+                perimetro = lado * 3;
+                break;
+            case "cuadrado":
+                perimetro = lado * 4;
+                break;
+            case "rectangulo":
+                var lado2 = parseFloat(document.getElementById("lado2").value);
+                if (isNaN(lado2)) {
+                    document.getElementById("resultado").innerText = "Por favor, ingrese un valor válido para el otro lado.";
+                    return;
+                }
+                perimetro = 2 * (lado + lado2);
+                break;
+            case "pentagono":
+                perimetro = lado * 5;
+                break;
+            case "hexagono":
+                perimetro = lado * 6;
+                break;
+            default:
+                perimetro = "Error";
+                break;
+        }
+
+        document.getElementById("resultado").innerText = "El perímetro es: " + perimetro;
+    }
+</script>
