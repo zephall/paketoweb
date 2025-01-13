@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/general.css">
+    <script src="https://kit.fontawesome.com/d6ae4653be.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/PaketoIcon.png" alt="">
+                <h1>Paketo</h1>
+            </div>
+
+            <div class="search-container">
+                <input type="text" placeholder="Buscar productos..." class="search-input">
+                <button class="search-button">Buscar</button>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/offers.html">Ofertas</a></li>
+                <li><a href="/info.html">Informacion</a></li>
+                <li><a href="/me/carrito-de-compra.html">Carrito</a></li>
+            </ul>
+            <!-- Barra de búsqueda -->
+        </nav>
+    </header>
+    <div class="productos-lista">
+        <div class="card">
+            <img class="cardimg" src="images/productos/producto1.png" alt="producto_img">
+            <p class="cardoffer">Oferta 60% <i class="fa-solid fa-tag"></i></p>
+            <div class="carddesc">
+                <p class="cardtitle">Laptop gamer lenovo</p>
+                <p class="carddescrip">Intel core i5 3.5GHz</p>
+                <p class="cardprice">$30.000</p>
+                <a class="cardbutton" href="/productos/laptopgamer">comprar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="cardimg" src="images/productos/producto2.jpg" alt="producto_img">
+            <p class="cardoffer">Oferta 20% <i class="fa-solid fa-tag"></i></p>
+            <div class="carddesc">
+                <p class="cardtitle">mouse gamer terport</p>
+                <p class="carddescrip">Estetica rgb 8k</p>
+                <p class="cardprice">$500</p>
+                <a class="cardbutton" href="/productos/laptopgamer">comprar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="cardimg" src="images/productos/producto3.png" alt="producto_img">
+            <p class="cardoffer">Oferta 20% <i class="fa-solid fa-tag"></i></p>
+            <div class="carddesc">
+                <p class="cardtitle">Licencia windows</p>
+                <p class="carddescrip">Licencia de windows 10 enterprise</p>
+                <p class="cardprice">$2.000</p>
+                <a class="cardbutton" href="/productos/laptopgamer">comprar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="cardimg" src="https://http2.mlstatic.com/D_NQ_NP_2X_735845-MLM80572703860_112024-F.webp" alt="producto_img">
+            <p class="cardoffer">Oferta 80% <i class="fa-solid fa-tag"></i></p>
+            <div class="carddesc">
+                <p class="cardtitle">Office 365</p>
+                <p class="carddescrip">licencia office 1 año personal</p>
+                <p class="cardprice">$1000</p>
+                <a class="cardbutton" href="/productos/laptopgamer">comprar</a>
+            </div>
+        </div>
+       
+    </div>
+</body>
+
+</html>
+
+<style>
+    .card {
+        display: grid;
+        background-color: rgb(255, 255, 255);
+        max-width: 200px;
+        max-height: max-content;
+        padding: 20px;
+        margin: 20px;
+        border: solid 3px rgba(155, 155, 155, 0.386);
+        border-radius: 10px;
+        filter: contrast(100%);
+        transition: filter .5s ease .1s;
+        text-align: justify;
+        align-items: center;
+    }
+
+    .cardimg {
+        width: auto;
+        height: 120px;
+        transition: width, height .5s ease .1s;
+        /* position: fixed; */
+    }
+
+    .cardbutton {
+        border: solid 2px rgb(72, 72, 179);
+        padding: 10px;
+        /* margin: 15px; */
+        background-color: rgb(145, 145, 207);
+        border-radius: 10px;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .carddesc {
+        display: grid;
+    }
+
+    .cardoffer {
+        background-color: rgb(255, 68, 68);
+        padding: 10px;
+        color: #fff;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .carddesc p {
+        padding: 0px;
+        margin: 4px;
+        text-align: center;
+    }
+
+    /* .cardimg {
+        width: 100px;
+        height: 100px;
+    } */
+
+    .card:hover {
+        filter: contrast(150%);
+        /* transition: all ease-in 1.5s ease-out 12s; */
+        /* transition: all; */
+    }
+</style>

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paketo - Carrito de Compras</title>
-    <link rel="stylesheet" href="styles/general.css ">
-    <link rel="stylesheet" href="styles/carrito.css">
+    <link rel="stylesheet" href="/styles/general.css ">
+    <link rel="stylesheet" href="/styles/carrito.css">
 </head>
 <body>
 
@@ -13,19 +13,22 @@
     <header>
         <nav class="navbar">
             <div class="logo">
+                <img src="/images/PaketoIcon.png" alt="">
                 <h1>Paketo</h1>
             </div>
-            <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-            <!-- Barra de búsqueda -->
+
             <div class="search-container">
                 <input type="text" placeholder="Buscar productos..." class="search-input">
                 <button class="search-button">Buscar</button>
             </div>
+
+            <ul class="nav-links">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/offers.html">Ofertas</a></li>
+                <li><a href="/info.html">Informacion</a></li>
+                <li><a href="/me/carrito-de-compra.html">Carrito</a></li>
+            </ul>
+            <!-- Barra de búsqueda -->
         </nav>
     </header>
 
@@ -71,7 +74,8 @@
             <h3>Resumen</h3>
             <p><strong>Total Productos:</strong> 2</p>
             <p><strong>Total:</strong> <span class="total-precio">$4,699.98 MXN</span></p>
-            <button class="boton-compra">Proceder al Pago</button>
+            <br>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2zwWSpzoT18zipy6y9Vbc_8sbaPSFP1cAvk5HqBPfupwuSg/viewform?usp=header" class="boton-compra">Proceder al Pago</a>
         </div>
     </section>
 
