@@ -306,7 +306,7 @@
    }
 
    .fondo-imagen {
-       background-image: url('/images/wallpaper.jpg');
+       background-image: url('images/wallpaper.jpg');
        /* Aquí coloca la ruta de tu imagen */
        background-size: cover;
        /* Hace que la imagen cubra toda el área */
