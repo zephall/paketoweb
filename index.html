@@ -1,43 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paketo - Tienda de Tecnología</title>
     <link rel="stylesheet" href="styles/general.css">
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-carousel@0.5.1/dist/vanilla-carousel.min.js"></script>
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="shortcut icon" href="images/PaketoIcon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/d6ae4653be.js" crossorigin="anonymous"></script>
+    <script src="scripts/scriptcarousel.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-    <!-- Barra de navegación -->
-    <header>
-        <nav class="navbar">
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
             <div class="logo">
-                <img src="images/PaketoIcon.png" alt="">
-                <h1>Paketo</h1>
+                <img class="logo" src="images/PaketoIcon.png" alt="">
             </div>
-
-            <div class="search-container">
-                <input type="text" placeholder="Buscar productos..." class="search-input">
-                <button class="search-button">Buscar</button>
+            <a class="navbar-brand" href="#">PAKETO.com</a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarColor01" style="">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="offers.html">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catalogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ubicacion.html">Ubicacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro.html">Registro</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
             </div>
-
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="offers.html">Ofertas</a></li>
-                <li><a href="info.html">Informacion</a></li>
-                <li><a href="me/carrito-de-compra.html">Carrito</a></li>
-            </ul>
-            <!-- Barra de búsqueda -->
-        </nav>
-    </header>
-
+        </div>
+    </nav>
     <!-- Sección de productos destacados -->
+
+    <section style="align-items: center; align-content: center;">
+        <center>
+            <div class="fondo-imagen">
+                <div class="texto">
+                    <h1>PAKETO</h1>
+                    <p>¡La tienda online donde encuentras lo mejor en tecnología y componentes electrónicos!
+                        En Paqueto nos especializamos en ofrecer los productos de tecnología más innovadores y de alta
+                        calidad, garantizando que encuentres lo que buscas con precios competitivos y un excelente
+                        servicio al cliente.</p>
+                </div>
+            </div>
+        </center>
+    </section>
+
     <section class="productos">
+        <h1>OFERTAS Y PRODUCTOS RECOMENDADOS</h1>
+
+        <center class="carouselcenter">
+            <div class="carouselgg">
+                <div class="carrusel">
+                    <div class="imagenes">
+                        <img src="images/carousel/oferta-bluesnowball.png" alt="Producto 1">
+                        <img src="images/carousel/NuevaLaptop.png" alt="Producto 2">
+                        <img src="images/carousel/silla ergonomica.png" alt="Producto 3">
+                        <img src="images/carousel/realme buds air 5pro.png" alt="Producto 4">
+                    </div>
+                </div>
+                <div class="indicadores">
+                    <div class="indicador active"></div>
+                    <div class="indicador"></div>
+                    <div class="indicador"></div>
+                    <div class="indicador"></div>
+                </div>
+            </div>
+        </center>
+
+    </section>
+
+    <style>
+
+    </style>
+
+    <script>
+
+    </script>
+
+    <section class="productos" id="destacados">
         <h2>Productos Destacados</h2>
+
         <div class="productos-lista">
             <div class="producto">
-                <img src="https://images.gamers-outlet.net/image/cache/wp/gj/Covers/wintest-500x500.webp" alt="Windows 10">
+                <img src="https://images.gamers-outlet.net/image/cache/wp/gj/Covers/wintest-500x500.webp"
+                    alt="Windows 10">
                 <h3>Windows 10</h3>
                 <p><span class="precio">$599.99 MXN</span></p>
                 <button>Añadir al carrito</button>
@@ -61,19 +132,22 @@
                 <button>Añadir al carrito</button>
             </div>
             <div class="producto">
-                <img src="https://i5.walmartimages.com.mx/mg/gm/1p/images/product-images/img_large/00075976321499l.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="Macbook Pro">
+                <img src="https://i5.walmartimages.com.mx/mg/gm/1p/images/product-images/img_large/00075976321499l.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
+                    alt="Macbook Pro">
                 <h3>Laptop Gamer Lenovo</h3>
                 <p><span class="precio">$29,999.99 MXN</span></p>
                 <button>Añadir al carrito</button>
             </div>
             <div class="producto">
-                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOrvVnQvkEECpUiKTQInPcmvjQrDyqwqdXoTuBwaUnkd62jWSd3ei0NLulboOtmAYzIDT2xwvlYJ8au3Sw2o5pLGOh0DLONE1YpYw_0b-_MOvussHZp0oW&usqp=CAE" alt="Mouse Inalámbrico">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOrvVnQvkEECpUiKTQInPcmvjQrDyqwqdXoTuBwaUnkd62jWSd3ei0NLulboOtmAYzIDT2xwvlYJ8au3Sw2o5pLGOh0DLONE1YpYw_0b-_MOvussHZp0oW&usqp=CAE"
+                    alt="Mouse Inalámbrico">
                 <h3>Mouse Inalámbrico</h3>
                 <p><span class="precio">$350.00 MXN</span></p>
                 <button>Añadir al carrito</button>
             </div>
             <div class="producto">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_980237-MLM78768593357_082024-O.webp" alt="Teclado Mecánico">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_980237-MLM78768593357_082024-O.webp"
+                    alt="Teclado Mecánico">
                 <h3>Teclado Mecánico</h3>
                 <p><span class="precio">$1,299.99 MXN</span></p>
                 <button>Añadir al carrito</button>
@@ -95,21 +169,13 @@
     <!-- Pie de página -->
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 Paketo. Todos los derechos reservados.</p>
+            <p>&copy; 2024 Paketo. Todos los derechos reservados. Braulio Rios Sanchez</p>
+            <p>CONTACTO</p>
+            <a href=""><i class="fa-brands fa-facebook"></i> Paketo</a>
+            <a href=""><i class="fa-brands fa-facebook"></i> Paketo</a>
+            <a href=""><i class="fa-brands fa-facebook"></i> Paketo</a>
         </div>
     </footer>
-
-    <script>
-        // Configuración de VanillaCarousel para el carousel dinámico
-        const carousel = new VanillaCarousel('#carousel', {
-            itemsToShow: 3,          // Mostrar 3 elementos por vez
-            autoplay: true,          // Desplazamiento automático
-            interval: 3000,          // Intervalo de 3 segundos entre deslizamientos
-            loop: true,              // Loop infinito
-            animation: 'scroll',     // Animación de desplazamiento
-            navigation: true,        // Añadir botones de navegación (prev y next)
-        });
-    </script>
 </body>
-</html>
 
+</html>

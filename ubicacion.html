@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paketo - Tienda de Tecnología</title>
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/bootstrap.css">
     <link rel="shortcut icon" href="images/PaketoIcon.png" type="image/x-icon">
@@ -13,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <title>PAKETO.com</title>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
                         <a class="nav-link" href="offers.html">Ofertas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="catalogo.html">Catalogo</a>
+                        <a class="nav-link" href="index.html#destacados">Catalogo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="ubicacion.html">Ubicacion</a>
@@ -55,91 +55,29 @@
         </div>
     </nav>
 
-    <div class="productos-lista">
-        <div class="card">
-            <img class="cardimg" src="images/productos/producto1.png" alt="producto_img">
-            <p class="cardoffer">Oferta 60% <i class="fa-solid fa-tag"></i></p>
-            <div class="carddesc">
-                <p class="cardtitle">Laptop gamer lenovo</p>
-                <p class="carddescrip">Intel core i5 3.5GHz</p>
-                <p class="cardprice">$30.000</p>
-                <a class="cardbutton" href="productos/laptopgamer">comprar</a>
-            </div>
-        </div>
+    <section>
+        <center>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.7656519285632!2d-98.87575307927281!3d19.409700704540313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e0fcbc5363e9%3A0xbf9d7042fa16d6db!2sCto.%20Real%20de%20Colima%2C%2056386%20Chicoloapan%20de%20Ju%C3%A1rez%2C%20M%C3%A9x.!5e0!3m2!1ses!2smx!4v1736820149388!5m2!1ses!2smx"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        
-<div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-       
-    </div>
+            <h5>Cto. Real de Colima, 56386 Chicoloapan de Juárez, Méx.</h5>
+            Mas informacion aqui: <a href=""><i class="fa-brands fa-whatsapp"></i> Paketo</a>
+
+        </center>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Paketo. Todos los derechos reservados. Braulio Rios Sanchez</p>
+            <p>CONTACTO</p>
+            <a href=""><i class="fa-brands fa-facebook"></i> Paketo</a>
+            <a href=""><i class="fa-brands fa-facebook"></i> Paketo</a>
+            <a href=""><i class="fa-brands fa-facebook"></i> Paketo</a>
+        </div>
+    </footer>
+
 </body>
 
 </html>
-
-<style>
-    .card {
-        display: grid;
-        background-color: rgb(255, 255, 255);
-        max-width: 200px;
-        max-height: max-content;
-        padding: 20px;
-        margin: 20px;
-        border: solid 3px rgba(155, 155, 155, 0.386);
-        border-radius: 10px;
-        filter: contrast(100%);
-        transition: filter .5s ease .1s;
-        text-align: justify;
-        align-items: center;
-    }
-
-    .cardimg {
-        width: auto;
-        height: 120px;
-        transition: width, height .5s ease .1s;
-        /* position: fixed; */
-    }
-
-    .cardbutton {
-        border: solid 2px rgb(72, 72, 179);
-        padding: 10px;
-        /* margin: 15px; */
-        background-color: rgb(145, 145, 207);
-        border-radius: 10px;
-        color: #fff;
-        text-decoration: none;
-        text-align: center;
-    }
-
-    .carddesc {
-        display: grid;
-    }
-
-    .cardoffer {
-        background-color: rgb(255, 68, 68);
-        padding: 10px;
-        color: #fff;
-        border-radius: 5px;
-        text-align: center;
-    }
-
-    .carddesc p {
-        padding: 0px;
-        margin: 4px;
-        text-align: center;
-    }
-
-    /* .cardimg {
-        width: 100px;
-        height: 100px;
-    } */
-
-    .card:hover {
-        filter: contrast(150%);
-        /* transition: all ease-in 1.5s ease-out 12s; */
-        /* transition: all; */
-    }
-</style>
